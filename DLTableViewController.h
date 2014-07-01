@@ -1,5 +1,5 @@
 //
-//  DLViewController.h
+//  DLTableViewController.h
 //  Calendar Months
 //
 //  Created by Dwayne Langley on 6/30/14.
@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Months.h"
 
-@interface DLViewController : UIViewController
+@interface DLTableViewController : UITableViewController
+
+@property (strong, nonatomic) Months *month;
 
 @end

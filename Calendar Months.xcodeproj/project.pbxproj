@@ -14,13 +14,14 @@
 		B51A8208196236E4002D3634 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B51A8207196236E4002D3634 /* main.m */; };
 		B51A820C196236E4002D3634 /* DLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B51A820B196236E4002D3634 /* DLAppDelegate.m */; };
 		B51A820F196236E4002D3634 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51A820D196236E4002D3634 /* Main.storyboard */; };
-		B51A8212196236E4002D3634 /* DLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B51A8211196236E4002D3634 /* DLViewController.m */; };
 		B51A8214196236E4002D3634 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51A8213196236E4002D3634 /* Images.xcassets */; };
 		B51A821B196236E4002D3634 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51A821A196236E4002D3634 /* XCTest.framework */; };
 		B51A821C196236E4002D3634 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51A81FB196236E4002D3634 /* Foundation.framework */; };
 		B51A821D196236E4002D3634 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51A81FF196236E4002D3634 /* UIKit.framework */; };
 		B51A8225196236E4002D3634 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B51A8223196236E4002D3634 /* InfoPlist.strings */; };
 		B51A8227196236E4002D3634 /* Calendar_MonthsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B51A8226196236E4002D3634 /* Calendar_MonthsTests.m */; };
+		B51A8232196237DC002D3634 /* DLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B51A8231196237DC002D3634 /* DLTableViewController.m */; };
+		B51A82361962393B002D3634 /* Months.m in Sources */ = {isa = PBXBuildFile; fileRef = B51A82351962393B002D3634 /* Months.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +46,16 @@
 		B51A820A196236E4002D3634 /* DLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLAppDelegate.h; sourceTree = "<group>"; };
 		B51A820B196236E4002D3634 /* DLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLAppDelegate.m; sourceTree = "<group>"; };
 		B51A820E196236E4002D3634 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B51A8210196236E4002D3634 /* DLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLViewController.h; sourceTree = "<group>"; };
-		B51A8211196236E4002D3634 /* DLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLViewController.m; sourceTree = "<group>"; };
 		B51A8213196236E4002D3634 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B51A8219196236E4002D3634 /* Calendar MonthsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Calendar MonthsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B51A821A196236E4002D3634 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B51A8222196236E4002D3634 /* Calendar MonthsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Calendar MonthsTests-Info.plist"; sourceTree = "<group>"; };
 		B51A8224196236E4002D3634 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B51A8226196236E4002D3634 /* Calendar_MonthsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Calendar_MonthsTests.m; sourceTree = "<group>"; };
+		B51A8230196237DC002D3634 /* DLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLTableViewController.h; path = ../DLTableViewController.h; sourceTree = "<group>"; };
+		B51A8231196237DC002D3634 /* DLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLTableViewController.m; path = ../DLTableViewController.m; sourceTree = "<group>"; };
+		B51A82341962393B002D3634 /* Months.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Months.h; sourceTree = "<group>"; };
+		B51A82351962393B002D3634 /* Months.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Months.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +115,12 @@
 		B51A8201196236E4002D3634 /* Calendar Months */ = {
 			isa = PBXGroup;
 			children = (
+				B51A8233196238CA002D3634 /* Model */,
+				B51A820D196236E4002D3634 /* Main.storyboard */,
+				B51A8230196237DC002D3634 /* DLTableViewController.h */,
+				B51A8231196237DC002D3634 /* DLTableViewController.m */,
 				B51A820A196236E4002D3634 /* DLAppDelegate.h */,
 				B51A820B196236E4002D3634 /* DLAppDelegate.m */,
-				B51A820D196236E4002D3634 /* Main.storyboard */,
-				B51A8210196236E4002D3634 /* DLViewController.h */,
-				B51A8211196236E4002D3634 /* DLViewController.m */,
 				B51A8213196236E4002D3634 /* Images.xcassets */,
 				B51A8202196236E4002D3634 /* Supporting Files */,
 			);
@@ -150,6 +154,15 @@
 				B51A8223196236E4002D3634 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B51A8233196238CA002D3634 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B51A82341962393B002D3634 /* Months.h */,
+				B51A82351962393B002D3634 /* Months.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,8 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B51A82361962393B002D3634 /* Months.m in Sources */,
+				B51A8232196237DC002D3634 /* DLTableViewController.m in Sources */,
 				B51A820C196236E4002D3634 /* DLAppDelegate.m in Sources */,
-				B51A8212196236E4002D3634 /* DLViewController.m in Sources */,
 				B51A8208196236E4002D3634 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
